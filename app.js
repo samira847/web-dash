@@ -1,14 +1,13 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
-require("dotenv").config();
 const port = 8888;
 
 console.log("Running from:", __dirname);
-
 
 
 //connect with db
